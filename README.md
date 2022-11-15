@@ -4,7 +4,7 @@ An Authentication application which uses firebase to grant users authentication.
 
 **End Result**
 
-Click Link Here : https://bucketlistapp-by-eniola.netlify.app/
+Click Link Here : https://authsystemapp.netlify.app/
 
 # Description
 
@@ -23,8 +23,8 @@ In the login page we have a the form for authentiction of a user, the form takes
 
 Now you can iterate between the login or sign up forms, by clicking the 'login with existing account' and 'Create new account'. You should login if you already have an account or sign upif you don't have one.
 
-![signup form](https://github.com/Eniola-Codes/Bucket-List-App/blob/main/src/asset/bucketerror.png?raw=true)
-![login form](https://github.com/Eniola-Codes/Bucket-List-App/blob/main/src/asset/bucketerror.png?raw=true)
+![signup form](https://github.com/Eniola-Codes/Authentication-system-app/blob/main/src/assets/signup%20form.png?raw=true)
+![login form](https://github.com/Eniola-Codes/Authentication-system-app/blob/main/src/assets/loginform.png?raw=true)
 
 After submitting the form, the information is sent to firebase authentication API endpoint, if the information is invalid, putting an invalid email address, invalid password or password shorter tha 6 digits you get an error alert saying 'Authentication failed!'
 
@@ -34,7 +34,7 @@ i then used the useContext() hook to store the user log in state, idToken and id
 
 The profile page contains a form that aloows you to change the password by taking on a password input. When submitted  a request is snt to firebase alongside the id token in teh body of the request so firebase knows the user that wants to chnage ther password.
 
-![change password](https://github.com/Eniola-Codes/Bucket-List-App/blob/main/src/asset/bucketerror.png?raw=true)
+![change password](https://github.com/Eniola-Codes/Authentication-system-app/blob/main/src/assets/changepass.png?raw=true)
 
 When you click on the logout button it clears the id token and uses context to change the login state to false.
 
